@@ -56,10 +56,12 @@ body{
 nav{
     background-color: black;
     grid-area: 1/1/3/2;
+    color: white;
 }
 
 header{
     background-color: yellow;
+    
 }
 
 main{
