@@ -47,7 +47,7 @@ table {
 /* document css */
 body{
     height: 100vh;
-    width: 100vw;
+    width: 100%;
     display: grid;
     grid-template-rows: 180px auto;
     grid-template-columns: minmax(300px, 1fr) 5fr;
@@ -87,17 +87,25 @@ div.top>img{
     height: 50px;
 }
 
+div.top>h1{
+    align-self: center;
+}
+
 h1, h2, h3, h4, h5, h6{
     margin: 0px;
 }
+
+
 
 
 /* header */
 header{
     background-color: yellow;
     display: grid;
-    grid-template-rows: 1fr 1fr;  
+    grid-template-rows: max-content max-content;  
     padding: 0px 50px 0px 50px ;     
+    align-content: center;
+    gap: 10px;
 }
 
 header img{
@@ -133,7 +141,54 @@ header input{
     column-gap: 30px;
 }
 
+#small-profile-icon{
+    width: 60px;
+    height: 60px;
+    border-radius: 50px;
+}
+
 /* header bottom */
+.bottom-header{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    align-items: center;
+}
+
+.bottom-left-header{
+    display: grid;
+    grid-template-columns: max-content 1fr;  
+    gap: 10px;
+}
+
+.bottom-left-header-right{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+}
+
+.bottom-right-header{
+    display: grid;
+    grid-template-columns: max-content max-content max-content;
+    justify-content: end;
+    gap: 40px;
+    padding-right: 20px;
+}
+
+.bottom-right-header>button{
+    width: 100px;
+    height: 40px;
+    border-radius: 50px;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+#big-profile-icon{
+    width: 80px;
+    height: 80px;
+    border-radius: 50px;
+}
 
 
 /* main */
