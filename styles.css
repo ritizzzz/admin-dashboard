@@ -191,12 +191,17 @@ header input{
 /* main */
 main{
     background-color: blue;
-    padding: 50px;
+    padding: 30px 50px;
+    display: grid;
+    grid-template-columns: 8fr 2fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 15px;
+
     
 }
 
 .card-container{
-    width: 70%;
+    width: 100%%;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
     gap: 15px;
@@ -206,14 +211,21 @@ main{
     height: 200px;
     background-color: white;
     position: relative;
+    border-radius: 20px;
 }
 
-.card:before{
-    content: '';
-    position: absolute;
-    top: 0px;
-    left: 0px;
-    width: 10px;
-    height: 100%;
-    background-color: green;
+.projects{
+
+    grid-area: 1/1/3/2;
+}
+
+.announcements, .trending{
+    width: 100%;
+    height: 300px;
+    background-color: white;
+}
+
+.announcements{
+    grid-column: 2/3;
+    grid-row: 2/3;
 }
