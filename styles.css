@@ -245,4 +245,16 @@ main{
     height: 300px;
     border-radius: 20px;
     background-color: white;
+    box-sizing: border-box;
+    padding: 20px;
+    display: grid;
+    grid-auto-rows: 1fr;
 }
+
+.announcement{
+    padding: 10px 0px 10px 0px;
+}
+.announcement:not(:last-child){
+    border-bottom: 1px solid gray;
+}
+
