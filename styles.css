@@ -195,10 +195,8 @@ main{
     padding: 20px 50px;
     display: grid;
     grid-template-columns: auto 275px;
-    grid-template-rows: max-content 1fr ;
+    grid-template-rows: max-content  ;
     gap: 15px 25px;
-
-    
 }
 
 .card-container{
@@ -258,3 +256,14 @@ main{
     border-bottom: 1px solid gray;
 }
 
+
+.trending{
+    gap: 10px;
+    padding: 10px;
+}
+
+.trending-card{
+    display: grid;
+    grid-template-columns: max-content 1fr;
+    align-items: center;
+}
