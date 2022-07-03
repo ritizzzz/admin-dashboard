@@ -45,12 +45,22 @@ table {
 
 
 /* document css */
+
+:root{
+    --main-30: #262626;
+    --main-60: #f5f5f4;
+    --header-card-background: #e5e5e5 ;
+     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+
+
 body{
     height: 100vh;
     width: 100%;
     display: grid;
     grid-template-rows: 180px auto;
     grid-template-columns: minmax(300px, 1fr) 5fr;
+    background-color: var(--main-60)
 }
 
 img{
@@ -61,7 +71,7 @@ img{
 
 /* navbar */
 nav{
-    background-color: black;
+    background-color: var(--main-30);
     grid-area: 1/1/3/2;
     color: white;
     display: grid;
@@ -101,12 +111,13 @@ h1, h2, h3, h4, h5, h6{
 
 /* header */
 header{
-    background-color: yellow;
+    background-color: var(--header-card-background);
     display: grid;
     grid-template-rows: max-content max-content;  
     padding: 0px 50px 0px 50px ;     
     align-content: center;
     gap: 10px;
+    box-shadow: 0px 4px 4px -4px var(--main-30);
 }
 
  
@@ -116,7 +127,27 @@ header input{
     height: 25px;
     width: 100%;
     border-radius: 50px;
+    border: none;
+    background-color: var(--main-60);
 }
+
+
+input:focus-visible{
+    outline: none;
+    border: 2px solid var(--main-30);
+}
+
+button,input{
+    -webkit-appearance: none;
+    appearance: none;
+    border: none;
+}
+
+button{
+    background-color: var(--main-30);
+    color: var(--main-60);
+}
+
 .top-header{
     display: grid;
     grid-template-columns: 2fr 1fr;
@@ -144,6 +175,7 @@ header input{
     height: 60px;
     border-radius: 50px;
 }
+
 
 /* header bottom */
 .bottom-header{
@@ -189,14 +221,18 @@ header input{
 }
 
 
+
+
 /* main */
 main{
-    background-color: rgb(149, 149, 218);
+    background-color: var(--main-60);
     padding: 20px 50px;
     display: grid;
     grid-template-columns: auto 275px;
     grid-template-rows: max-content  ;
     gap: 15px 25px;
+    margin-top: 5px;
+    
 }
 
 .card-container{
@@ -211,13 +247,13 @@ main{
     position: relative;
     border-radius: 20px;
     background-image: linear-gradient(to right, green 10px, transparent 10px);
-    box-shadow: 6px 6px 6px -4px black;
+    box-shadow: 6px 6px 6px -4px var(--main-30);
     box-sizing: border-box;
     height: 200px;
     padding: 20px;
     display: grid;
     grid-template-rows: max-content 1fr max-content;
-    
+    background-color: var(--header-card-background);
 
 }
 
@@ -235,14 +271,15 @@ main{
     display: flex;
     flex-direction: column;
     gap: 15px;
+
 }
 
 .announcements, .trending{
-    box-shadow: 6px 6px 6px -4px black;
+    background-color: var(--header-card-background);
+    box-shadow: 6px 6px 6px -4px var(--main-30);
     width: 100%;
     height: 300px;
     border-radius: 20px;
-    background-color: white;
     box-sizing: border-box;
     padding: 20px;
     display: grid;
@@ -266,4 +303,8 @@ main{
     display: grid;
     grid-template-columns: max-content 1fr;
     align-items: center;
+}
+
+.light{
+    color: rgb(85, 80, 80);
 }
