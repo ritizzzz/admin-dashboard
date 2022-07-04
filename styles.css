@@ -282,7 +282,7 @@ main{
 }
 .card:hover, .announcements:hover, .trending:hover{
     z-index: 3;
-    transform: scale(1.15);
+    transform: scale(1.05);
 }
 .card-body{
     padding-top: 10px;
