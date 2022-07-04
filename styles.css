@@ -269,7 +269,13 @@ main{
     background-color: var(--header-card-background);
 
 }
-
+.card, .announcements, .trending{
+    transition: 0.1s;
+}
+.card:hover, .announcements:hover, .trending:hover{
+    z-index: 3;
+    transform: scale(1.15);
+}
 .card-body{
     padding-top: 10px;
 }
