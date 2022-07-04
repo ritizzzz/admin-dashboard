@@ -75,16 +75,24 @@ nav{
     grid-area: 1/1/3/2;
     color: white;
     display: grid;
-    padding: 10px;
     grid-template-rows: max-content max-content max-content;
     gap: 50px;
 }
-
-nav>div{
+.nav-card{
     display: grid;
     grid-template-columns: 50px 200px;
-    gap: 20px 10px;
+    gap: 10px;
+    padding: 5px;
 }
+
+.top{
+    padding-top: 10px;
+}
+/* .middle, .end{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+} */ 
 
 nav h1, nav h3{
     align-self: center;
@@ -92,11 +100,10 @@ nav h1, nav h3{
 
 nav img{
     justify-self: center;
-    width: 35px;
-    height: 35px;
 }
 
-div.top>img{
+.large-icon{
+    align-self: center;
     width: 50px;
     height: 50px;
 }
