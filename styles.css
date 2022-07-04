@@ -69,9 +69,7 @@ img{
     cursor: pointer;
 }
 
-button{
-    cursor: pointer;
-}
+
 
 /* navbar */
 nav{
@@ -157,10 +155,20 @@ button,input{
 }
 
 button{
+    background-color: var(--header-card-background);
+    border: 1px solid black;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover{
     background-color: var(--main-30);
     color: var(--main-60);
 }
 
+button:active{
+    transform: scale(0.9);
+}
 .top-header{
     display: grid;
     grid-template-columns: 2fr 1fr;
