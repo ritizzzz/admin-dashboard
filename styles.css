@@ -69,6 +69,10 @@ img{
     cursor: pointer;
 }
 
+button{
+    cursor: pointer;
+}
+
 /* navbar */
 nav{
     background-color: var(--main-30);
@@ -78,21 +82,23 @@ nav{
     grid-template-rows: max-content max-content max-content;
     gap: 50px;
 }
-.nav-card{
+.nav-card, .nav-card-no-hover{
     display: grid;
     grid-template-columns: 50px 200px;
     gap: 10px;
     padding: 5px;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.nav-card:hover{
+    border-left: 20px solid green;
+    background-color: #313030;
 }
 
 .top{
     padding-top: 10px;
 }
-/* .middle, .end{
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-} */ 
 
 nav h1, nav h3{
     align-self: center;
